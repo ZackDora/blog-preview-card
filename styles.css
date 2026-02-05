@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Outfit:wght@100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Figtree', system-ui, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+body {
+    background-color: hsl(47, 88%, 63%);
+    padding: 2rem;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    width: 100%; 
+    border: solid 1px hsl(0, 0%, 7%);
+    border-radius: 15px;
+    padding: 1.25rem;
+    gap: 1rem;
+
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 10px 4px 0px rgba(0, 0, 0, 1);
+}
+
+.card-image {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.tag {
+    background-color: hsl(47, 88%, 63%);
+    color: hsl(0, 0%, 7%);
+    align-self: flex-start;
+    padding: 0.5rem 0.75rem;
+    border-radius: 5px;
+    font-weight: 800;
+    margin-top: 0.75rem;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    color: hsl(0, 0%, 7%);
+}
+
+.card-date {
+    color: hsl(0, 0%, 7%);
+    font-weight: 500;
+}
+
+.card-description {
+    font-size: 1rem;
+    color: hsl(0, 0%, 42%);
+    line-height: 1.5;
+}
+
+.card a {
+    color: hsl(0, 0%, 7%);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.card a:hover,
+.card a:focus {
+    color: hsl(47, 88%, 63%);
+}
+
+
+
+
+.author {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.author-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.author-name {
+    font-weight: 800;
+    color: hsl(0, 0%, 7%);
+}
+
+@media (max-width: 375px) {
+    .card {
+        width: 300px;
+    }
+
+    .card-image {
+       min-height: 200px; 
+    }
+}
